@@ -10,10 +10,11 @@ A Bookmarklet / CSS Snippet that inserts a Media Query indicator into the page.
 
 ## Quick start
 
-1. Drag this link to your bookmarks -> [MQ Indicator](javascript:(function(f,a){var h=document.createElement('div');h.className='CURRENT-SIZE';var e=document.createElement('div');e.id='RESIZE-INDICATOR';e.appendChild(h);document.getElementsByTagName('BODY')[0].appendChild(e);var c=document.createElement('link'),b=document.getElementsByTagName('link')[0];c.rel='stylesheet';c.href=('https:'==location.protocol?'//ssl':'http://')+'github.com/AMeijerNL/mq-indicator/css/mq-indicator.min.css';document.head.appendChild(c,b)}());)
-2. Go to any website 
-3. When the page has loaded, select the bookmark you just created
-4. There you have it: a Media Query indicator 
+1. Go to the [project page](http://dev.ameijer.nl/mq-indicator/index.html)
+2. Drag the bookmarklet link to your bookmarks
+3. Go to any website 
+4. When the page has loaded, select the bookmark you just created
+5. There you have it: a Media Query indicator 
 
 
 ## How it works
