@@ -1,0 +1,177 @@
+/* ==========================================
+   	@AMeijerNL - 2013
+
+		A Media Query indicator, created using only CSS!
+		Available on Github: https://github.com/AMeijerNL/mq-indicator
+			- as a bookmarklet
+			- css snippet
+
+		Free to use & modify :)
+   ========================================== */
+#RESIZE-INDICATOR {
+    width: 80px;
+    height: 80px;
+    padding:10px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background: orange;
+    box-sizing: content-box;
+}
+
+#RESIZE-INDICATOR .CURRENT-SIZE {
+    border: 3px solid #444;
+    background: #DDD;
+    width: 24px;
+    height: 32px;
+    margin: 21px 25px;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: content-box;
+}
+
+#RESIZE-INDICATOR .CURRENT-SIZE:after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    width: 3px;
+    height: 5px;
+    background-color: #444;
+    top: -7px;
+    left: 70%;
+}
+
+@media only screen and (max-width: 249px) {
+    #RESIZE-INDICATOR .CURRENT-SIZE {
+        border: 2px solid #444;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:before {
+        position: absolute;
+        display: block;
+        content: ' ';
+        width: 16px;
+        height: 10px;
+        background-color: #444;
+        top: 3px;
+        left: 4px;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:after {
+        width: 2px;
+        height: 2px;
+        top: 17px;
+        left: 6px;
+        box-shadow: 0px 4px 0px 0px #333, 0px 8px 0px 0px #333, 5px 0px 0px 0px #333, 5px 4px 0px 0px #333, 5px 8px 0px 0px #333, 10px 0px 0px 0px #333, 10px 4px 0px 0px #333, 10px 8px 0px 0px #333;
+    }  
+}
+
+@media only screen and (min-width: 250px) and (orientation: landscape) {
+    #RESIZE-INDICATOR .CURRENT-SIZE {
+        width: 32px;
+        height: 24px;
+        margin: 25px 21px;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:after {
+        width: 5px;
+        height: 3px;
+        right: -7px;
+        left: auto;
+        top: 70%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    #RESIZE-INDICATOR .CURRENT-SIZE {
+        border-width: 5px;
+        width: 30px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 15px 20px;
+        position: relative;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:after {
+        width: 5px;
+        height: 5px;
+        top: auto;
+        bottom: 3px;
+        left: 50%;
+        margin-left: -2px;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (orientation: landscape) {
+
+    #RESIZE-INDICATOR .CURRENT-SIZE {
+        width: 40px;
+        height: 30px;
+        margin: 20px 15px;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:after {
+        top: 50%;
+        bottom: auto;
+        left: 4px;
+        margin-top: -2px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #RESIZE-INDICATOR .CURRENT-SIZE {
+        border-width: 5px;
+        width: 50px;
+        height: 30px;
+        margin: 15px 10px 25px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:before {
+        position: absolute;
+        display: block;
+        content: 'PC';
+        width: 100%;
+        text-align: center;
+        top: 5px;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:after {
+        width: 100%;
+        padding: 0px 5px;
+        height: 8px;
+        bottom: -15px;
+        left: -3px;
+        top: auto;
+        border-radius: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 1250px) {
+
+    #RESIZE-INDICATOR .CURRENT-SIZE {
+        border-radius: 0px;
+        margin: 20px 10px;
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:before {
+        content: 'XL';
+    }
+
+    #RESIZE-INDICATOR .CURRENT-SIZE:after {
+        width: 60%;
+        left: 20%;
+        padding: 0px;
+        margin: 0;
+        height: 5px;
+        bottom: -11px;
+        border-radius: 0px;
+    }
+
+}
+
